@@ -276,4 +276,90 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5 class="fw-bold">Khaira</h5>
+
+            <p class="mb-1">SMK Negeri 9 Medan</p>
+
+            <p class="mb-3">
+                Kelas XI RPL 3 | Rekayasa Perangkat Lunak
+            </p>
+
+            <p>
+                Media Sosial:
+                <a href="https://www.instagram.com/@khaiiisn"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link-info text-decoration-none">
+                    Instagram
+                </a>
+                |
+                <a href="https://www.tiktok.com/@asloylqy"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link-info text-decoration-none">
+                    Tiktok
+                </a>
+                |
+                <a href="https://wa.me/+6285189764570"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link-info text-decoration-none">
+                    Whatsapp
+                </a>
+            </p>
+
+            <hr>
+
+            <p class="mb-0">
+                &copy; 2026 Khaira. Hak Cipta Dilindungi.
+            </p>
+
+        </div>
+
+    
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- JAVASCRIPT UNTUK FORM DAN MODAL -->
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        const successModal = new bootstrap.Modal(
+            document.getElementById("successModal")
+        );
+
+        const successMessage =
+            document.getElementById("successMessage");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const nama = document.getElementById("nama").value;
+
+            successMessage.textContent =
+                "Terima kasih, " + nama +
+                "! Formulir berhasil dikirim.";
+
+            successModal.show();
+
+            contactForm.reset();
+
+        });
+    </script>
+
+
+<!-- Tautkan Bootstrap JavaScript dan jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
 
